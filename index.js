@@ -7,12 +7,12 @@ app.get('/',(req,res)=>{
 	res.send('root 4000');
 });
 
-app.post('/app',(eq,res)=>{
+app.get('/app',(req,res)=>{
 	console.log('calling app URL 4000');
 	res.send('app URL 4000');
 });
 
-app.get('/app',(eq,res)=>{
+app.get('/app/test',(req,res)=>{
         console.log('calling app URL using get method 4000');
         res.send('app URL using get method 4000');
 });
